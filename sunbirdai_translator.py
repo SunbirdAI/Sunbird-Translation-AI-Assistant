@@ -1,15 +1,23 @@
 import json
+import os
 import re
 
 import requests
 import streamlit as st
+from dotenv import load_dotenv
 from openai import OpenAI
+
+load_dotenv()
 
 st.title("Sunbird AI Translation Assistant")
 
 # Set OpenAI API key from Streamlit secrets
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-sb_api_auth_token = st.secrets["SB_API_AUTH_TOKEN"]
+try:
+    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+    sb_api_auth_token = st.secrets["SB_API_AUTH_TOKEN"]
+except KeyError as e:
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    sb_api_auth_token = os.getenv("SB_API_AUTH_TOKEN")
 
 language_codes = {
     "English": "eng",
