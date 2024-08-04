@@ -2,10 +2,12 @@
 
 Sunbird AI Translation Assistant is an interactive tool built using Streamlit that translates text between English and Ugandan languages or between Ugandan languages themselves. The assistant leverages the OpenAI GPT-3.5 model for conversational interactions and Sunbird AI Translation API for performing the actual translations.
 
-<video width="320" height="240" controls>
+<!-- <video width="320" height="240" controls>
   <source src="https://youtu.be/_yaJ6mM66yM">
   Your browser does not support the video tag.
-</video>
+</video> -->
+
+[![Sunbird AI Translation Assignat](./sunbirdai-translator.png)](https://youtu.be/_yaJ6mM66yM)
 
 ## Features
 
