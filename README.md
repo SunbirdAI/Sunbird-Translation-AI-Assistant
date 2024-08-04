@@ -7,7 +7,7 @@ Sunbird AI Translation Assistant is an interactive tool built using Streamlit th
   Your browser does not support the video tag.
 </video> -->
 
-[![Sunbird AI Translation Assignat](./sunbirdai-translator.png)](https://youtu.be/_yaJ6mM66yM)
+[![Sunbird AI Translation Assignat](./sunbirdai-translator.png)](https://github.com/SunbirdAI/Sunbird-Translation-AI-Assistant/blob/main/streamlit-sunbirdai_translator-2024-08-04-18-08-42.webm)
 
 ## Features
 
