@@ -7,9 +7,7 @@ Sunbird AI Translation Assistant is an interactive tool built using Streamlit th
   Your browser does not support the video tag.
 </video> -->
 
-<a href="https://www.youtube.com/watch?v=_yaJ6mM66yM">
-  <img src="https://i9.ytimg.com/vi_webp/_yaJ6mM66yM/mq2.webp?sqp=CKzNvrUG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGE0gUChlMA8=&rs=AOn4CLA8EzdSyoS4J843j9p0xQ-vjIpoMQ">
-</a>
+[![Sunbird AI Translation Assignat](./sunbirdai-translator.png)](https://youtu.be/_yaJ6mM66yM)
 
 ## Features
 
@@ -17,6 +15,12 @@ Sunbird AI Translation Assistant is an interactive tool built using Streamlit th
 - Translate from any Ugandan language to English.
 - User-friendly, conversational interface.
 - Streamlit-based web app for easy deployment and interaction.
+
+You can follow up with the video below
+
+<a href="https://www.youtube.com/watch?v=_yaJ6mM66yM">
+  <img src="https://i9.ytimg.com/vi_webp/_yaJ6mM66yM/mq2.webp?sqp=CKzNvrUG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGE0gUChlMA8=&rs=AOn4CLA8EzdSyoS4J843j9p0xQ-vjIpoMQ">
+</a>
 
 ## Installation
 
