@@ -209,26 +209,31 @@ if prompt := st.chat_input("How can I help you with translation today?"):
 
 # Translate button
 if st.button("Translate"):
-    with st.spinner("Translation in process..."):
-        translation_result = get_translation_task(st.session_state.messages)
-        translated_text = translate(
-            translation_result["text"],
-            translation_result["source_language"],
-            translation_result["target_language"],
-        )
-        translation_result["translated_text"] = translated_text
-        source_language = get_language(
-            language_codes, translation_result["source_language"]
-        )
-        target_language = get_language(
-            language_codes, translation_result["target_language"]
-        )
-        response_message = (
-            f"Translation completed from {source_language} "
-            f"to {target_language}: {translated_text}."
-        )
-        with st.chat_message("assistant"):
-            st.write(response_message)
-            st.session_state.messages.append(
-                {"role": "assistant", "content": response_message}
+    try:
+        with st.spinner("Translation in process..."):
+            translation_result = get_translation_task(st.session_state.messages)
+            translated_text = translate(
+                translation_result["text"],
+                translation_result["source_language"],
+                translation_result["target_language"],
             )
+            translation_result["translated_text"] = translated_text
+            source_language = get_language(
+                language_codes, translation_result["source_language"]
+            )
+            target_language = get_language(
+                language_codes, translation_result["target_language"]
+            )
+            response_message = (
+                f"Translation completed from {source_language} "
+                f"to {target_language}: {translated_text}."
+            )
+            with st.chat_message("assistant"):
+                st.write(response_message)
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": response_message}
+                )
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        st.write("Something went wrong! Please try interracting with the assistant in chatbox below and"
+                 " follow it's instructions before you can proceed with tranlation.")
